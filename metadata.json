@@ -1,0 +1,6 @@
+{
+  "name": "Brooklyn Farmacy & Soda Fountain",
+  "description": "Restored 1920s Carroll Gardens apothecary and soda fountain parlor serving handcrafted egg creams, farm-fresh sundaes, artisan phosphates, and savory counter provisions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #fff8f6;
+  --color-surface: #fff8f6;
+  --color-surface-dim: #e9d6d1;
+  --color-surface-bright: #fff8f6;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #fff1ed;
+  --color-surface-container: #feeae4;
+  --color-surface-container-high: #f8e4de;
+  --color-surface-container-highest: #f2ded9;
+  --color-on-surface: #231916;
+  --color-on-surface-variant: #57423e;
+  --color-inverse-surface: #392e2a;
+  --color-inverse-on-surface: #ffede8;
+  --color-outline: #8b716d;
+  --color-outline-variant: #dec0bb;
+
+  --color-primary: #6b0e06;
+  --color-primary-container: #8b261a;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #ffa394;
+  --color-primary-fixed: #ffdad4;
+  --color-primary-fixed-dim: #ffb4a8;
+
+  --color-secondary: #376847;
+  --color-secondary-container: #b6edc2;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #3b6d4b;
+  --color-secondary-fixed: #b9efc5;
+  --color-secondary-fixed-dim: #9dd3aa;
+
+  --color-tertiary: #502b00;
+  --color-tertiary-container: #6f3f03;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #f1ac6a;
+  --color-tertiary-fixed: #ffdcbf;
+  --color-tertiary-fixed-dim: #feb874;
+
+  --font-display-lg: "Bodoni Moda", serif;
+  --font-headline-lg: "Bodoni Moda", serif;
+  --font-headline-md: "Bodoni Moda", serif;
+  --font-headline-sm: "Bodoni Moda", serif;
+  --font-body-lg: "Literata", serif;
+  --font-body-md: "Literata", serif;
+  --font-body-sm: "Literata", serif;
+  --font-label-lg: "Space Mono", monospace;
+  --font-label-md: "Space Mono", monospace;
+  --font-label-sm: "Space Mono", monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body-md);
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline-lg);
+  }
+
+  /* Custom smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom apothecary styling utilities */
+.font-display-lg {
+  font-family: "Bodoni Moda", serif;
+  font-size: clamp(34px, 5vw, 56px);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.font-headline-lg {
+  font-family: "Bodoni Moda", serif;
+  font-size: clamp(26px, 3.5vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.font-headline-md {
+  font-family: "Bodoni Moda", serif;
+  font-size: clamp(22px, 2.8vw, 28px);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.font-headline-sm {
+  font-family: "Bodoni Moda", serif;
+  font-size: clamp(18px, 2.2vw, 22px);
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.font-body-lg {
+  font-family: "Literata", Georgia, serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: "Literata", Georgia, serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-family: "Literata", Georgia, serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.font-label-lg {
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.font-label-md {
+  font-family: "Space Mono", monospace;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+}
+
+.font-label-sm {
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+
+/* Archival dot leader line for menu pricing */
+.dot-leader {
+  background-image: radial-gradient(circle, #8b716d 1px, transparent 1.5px);
+  background-size: 8px 8px;
+  background-repeat: repeat-x;
+  background-position: bottom 6px;
+}
+
+/* Prescription paper faint ledger stripes */
+.rx-paper-texture {
+  background-color: #fffdfa;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 27px,
+    rgba(219, 142, 142, 0.22) 28px
+  );
+}
